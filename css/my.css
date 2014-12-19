@@ -1,0 +1,40 @@
+html {
+	text-align: center;
+}
+
+body {
+	background-color: #DEDEDE;
+}
+
+img {
+	margin: auto;
+}
+
+header {
+	background-color: #A6A5A5;
+}
+
+section {
+	padding: 10px;
+	background-color: #EFEFEF;
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.4);
+	box-sizing: border-box;
+	height: 200px;
+}
+
+.hantei {
+}
+
+section h1 {
+	font-size: 30px;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+@media screen and (max-width : 768px){
+	section h1 {
+	font-size: 25px;
+	}
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>美男美女診断</title>
+		<link rel="icon" type="" href="favicon.ico">
+		<link rel="apple-touch-icon" href="img/icon.png">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" media="screen" href="css/cyborg.css">
+		<link rel="stylesheet" media="screen" href="css/my.css">
+	</head>
+
+	<body>
+
+			<img src="titleImg.png" class="img-responsive" alt="title">
+
+			<section class="col-md-12"> <!-- URLで診断 -->
+				<h1>Web上の画像で診断！(URLを入れてください)</h1>
+				<form method="post" enctype="multipart/form-data"  action="result.php">
+					<input type="url" class="form-control" placeholder="Enter address" name="upfile" accept="image/*;capture=camera" id="imageFile"/>
+					<br>
+					<button type="submit" class="btn btn-primary btn-lg hantei">判定！</button>
+				</form>
+			</section>
+
+<!-- 			<section class="col-md-6">
+				<h1>持ってる画像で診断(´・ω・｀)</h1>
+				<form method="post" enctype="multipart/form-data"  action="result.php">
+					<input type="file" name="upfile" accept="image/*;capture=camera" id="imageFile"/>
+					<button type="submit" class="btn btn-primary btn-lg hantei">判定！</button>
+				</form>
+				<img id="image"width="200" height="200">
+			</section> -->
+		</div>
+		<footer>
+			<p>powered by</p>
+			<p>©2014 沖国Eggs</p>
+		</footer>
+	</body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+<!-- 	<script type="text/javascript">
+		window.addEventListener("load", function(){
+		if (!window.File){
+			result.innerHTML = "File API 使用不可";
+			return;
+		}
+
+		document.getElementById("imageFile").addEventListener("change", function(){
+			var reader = new FileReader();
+			reader.onload = function(event){
+				document.getElementById("image").src = reader.result;
+			}
+			var file = document.getElementById("imageFile").files[0];
+			reader.readAsDataURL(file);
+			}, true);
+		}, true);
+		</script> -->
+	</body>
+</html>
