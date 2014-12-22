@@ -22,10 +22,10 @@
 		//APIを利用して値を取得
 		$ch = curl_init();
 		$data = array('api_key' => $key,
-									'api_secret' => $sec,
-									'jobs' => 'face_part_aggressive_beauty_glass_sex',
-									'urls' => $_POST["upfile"]
-									);
+						'api_secret' => $sec,
+						'jobs' => 'face_part_aggressive_beauty_glass_sex',
+						'urls' => $_POST["upfile"]
+						);
 
 		curl_setopt($ch, CURLOPT_URL, 'http://rekognition.com/func/api/');
 		curl_setopt($ch, CURLOPT_POST, 1);
